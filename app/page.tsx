@@ -1,6 +1,11 @@
 'use client'
 import Image from 'next/image'
+import backimg from '/public/IMG_1004-2.jpg';
 import Typewriter from 'typewriter-effect';
+import img01 from '/public/IMG_1505.jpg';
+import img02 from '/public/IMG_1484.jpg';
+import img03 from '/public/IMG_0244.jpg';
+import aboutme from '/public/IMG_0041.jpg';
 
 
 export default function Home() {
@@ -23,7 +28,7 @@ export default function Home() {
 
         <div className='landingPho'>
           <Image className='homepageIMG'
-            src={'images/IMG_1004-2.jpg'}
+            src={backimg}
             width={1728}
             height={1117}
             alt='/image/IMG_1004.jpg'
@@ -52,7 +57,7 @@ export default function Home() {
           <div className='I01'>
             <h2>01</h2>
             <Image className='smallImg'
-            src={'images/IMG_1505.jpg'}
+            src={img01}
             width={400}
             height={600}
             alt='/image/IMG_1505.jpg'
@@ -63,7 +68,7 @@ export default function Home() {
           <div className='I02'>
             <h2>02</h2>
             <Image className='smallImg'
-            src={'images/IMG_1484.jpg'}
+            src={img02}
             width={400}
             height={600}
             alt='/image/IMG_1505.jpg'
@@ -74,7 +79,7 @@ export default function Home() {
           <div className='I03'>
             <h2>03</h2>
             <Image className='smallImg2'
-            src={'images/IMG_0244.jpg'}
+            src={img03}
             width={800}
             height={400}
             alt='/image/IMG_0244.jpg'
@@ -92,7 +97,7 @@ export default function Home() {
         <div className='inline-flex abt_me_blog'>
           <div>
             <Image className='abtmeIMG'
-              src={'images/IMG_0041.jpg'}
+              src={aboutme}
               width={400}
               height={600}
               alt='/image/IMG_1505.jpg'

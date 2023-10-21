@@ -1,11 +1,11 @@
 'use client'
 import Image from 'next/image'
-import backimg from '/Users/joeul/Desktop/port page/image/IMG_1004-2.jpg'
+import backimg from '/image/IMG_1004-2.jpg'
 import Typewriter from 'typewriter-effect';
-import img01 from '/Users/joeul/Desktop/port page/image/IMG_1505.jpg'
-import img02 from '/Users/joeul/Desktop/port page/image/IMG_1484.jpg'
-import img03 from '/Users/joeul/Desktop/port page/image/IMG_0244.jpg'
-import aboutme from '/Users/joeul/Desktop/port page/image/IMG_0041.jpg'
+import img01 from '/image/IMG_1505.jpg'
+import img02 from '/image/IMG_1484.jpg'
+import img03 from '/image/IMG_0244.jpg'
+import aboutme from '/image/IMG_0041.jpg'
 
 
 export default function Home() {

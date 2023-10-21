@@ -17,9 +17,15 @@
 }
 main{
   font-family: 'Josefin Sans', sans-serif;
+  overflow: hidden; /* Hide scrollbars */
 
 }
+::-webkit-scrollbar {
+  display: none;
+}
+.slide1{
 
+}
 .header ul {
   list-style-type: none;
   margin: 0;
@@ -78,9 +84,142 @@ main{
   color: #A8A8A8;
   position: relative;
   text-align: center;
+
 }
 
 .homepageIMG{
   width: 100vw;
   height: 100vh;
+}
+
+.small_display{
+  width: 100vw;
+  height: 200vh;
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(33,33,33,1) 100%);
+  color: aliceblue;
+}
+.small_display h2{
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: .5vh;
+}
+.smallDisTit{
+  font-size: 58px;
+}
+
+.smallImg{
+  border-radius: 25px;
+  width: 20vw;
+  height: 60vh;
+}
+
+.I01{
+  margin-left: 15vw;
+  padding-top: 10vh;
+  display: flexbox;
+}
+.I01 h3{
+  margin-left: 7vw;
+  margin-top: 3vh;
+}
+.I02{
+  margin-left: 60vw;
+  margin-top: -30vh;
+  display: flexbox;
+}
+.I02 h3{
+  margin-left: 7vw;
+  margin-top: 3vh;
+}
+
+.I03{
+  margin-left: 15vw;
+  margin-top: -15vh;
+  display: flexbox;
+}
+.I03 h2{
+  position:static;
+}
+.I03 h3{
+  width: 400;
+  margin-left: 17vw;
+  margin-top: 3vh;
+}
+.smallImg2{
+  border-radius: 25px;
+  width: 40vw;
+  height: 50vh;
+}
+
+
+.about_me{
+  width: 100vw;
+  height: 100vh;
+  background: rgb(33,33,33);
+  background: linear-gradient(180deg, rgba(33,33,33,1) 0%, rgb(38, 38, 38) 100%);
+  color: aliceblue ;
+  font-size: 36px;
+  padding-top: 5vh;
+}
+
+.aboutmeText{
+  width: 30vw;
+  margin-left: 5vw;
+  font-size: 22px;
+}
+
+.abtmeIMG{
+  border-radius: 25px;
+  width: 15vw;
+  height: 45vh;
+}
+
+.abt_me_blog{
+  margin-left: 25vw;
+  margin-top: 10vh;
+}
+
+.footer{
+  margin-top:25vh;
+
+}
+
+.copyright{
+  font-size: 20px;
+  color: #A8A8A8;
+  display: block;
+
+}
+
+.socials{
+  font-size: 30px;
+  display: block;
+
+}
+
+
+.socials ul {
+  list-style-type: none;
+  margin-right:2.5vw;
+}
+
+.socials li {
+  display: inline;
+  margin-right: 2vw;
+  float: right;
+}
+.copyright p{
+  display: inline;
+  float: left;
+  margin-left: 5vw;
+
+}
+
+.copyright{
+  margin-right: 5vw;
+}
+.socials a {
+  display: block;
+  padding: 8px;
 }

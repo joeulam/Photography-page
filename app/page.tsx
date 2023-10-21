@@ -1,11 +1,6 @@
 'use client'
 import Image from 'next/image'
-import backimg from 'src/images/IMG_1004-2.jpg'
 import Typewriter from 'typewriter-effect';
-import img01 from 'src/images/IMG_1505.jpg'
-import img02 from 'src/images/IMG_1484.jpg'
-import img03 from 'src/images/IMG_0244.jpg'
-import aboutme from 'src/images/IMG_0041.jpg'
 
 
 export default function Home() {
@@ -28,7 +23,7 @@ export default function Home() {
 
         <div className='landingPho'>
           <Image className='homepageIMG'
-            src={backimg}
+            src={'images/IMG_1004-2.jpg'}
             width={1728}
             height={1117}
             alt='/image/IMG_1004.jpg'
@@ -57,7 +52,7 @@ export default function Home() {
           <div className='I01'>
             <h2>01</h2>
             <Image className='smallImg'
-            src={img01}
+            src={'images/IMG_1505.jpg'}
             width={400}
             height={600}
             alt='/image/IMG_1505.jpg'
@@ -68,7 +63,7 @@ export default function Home() {
           <div className='I02'>
             <h2>02</h2>
             <Image className='smallImg'
-            src={img02}
+            src={'images/IMG_1484.jpg'}
             width={400}
             height={600}
             alt='/image/IMG_1505.jpg'
@@ -79,7 +74,7 @@ export default function Home() {
           <div className='I03'>
             <h2>03</h2>
             <Image className='smallImg2'
-            src={img03}
+            src={'images/IMG_0244.jpg'}
             width={800}
             height={400}
             alt='/image/IMG_0244.jpg'
@@ -97,7 +92,7 @@ export default function Home() {
         <div className='inline-flex abt_me_blog'>
           <div>
             <Image className='abtmeIMG'
-              src={aboutme}
+              src={'images/IMG_0041.jpg'}
               width={400}
               height={600}
               alt='/image/IMG_1505.jpg'

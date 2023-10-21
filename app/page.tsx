@@ -1,5 +1,8 @@
+'use client'
 import Image from 'next/image'
 import backimg from '/Users/joeul/Desktop/port page/image/IMG_1004.jpg'
+import Typewriter from 'typewriter-effect';
+
 
 export default function Home() {
   return (
@@ -7,11 +10,6 @@ export default function Home() {
       <style>
         @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
       </style>
-      <header>
-        
-      </header>
-
-
       <div>
         <ul className='header'>
           <li className='li2'><h1><a>J-L</a></h1></li>
@@ -31,7 +29,17 @@ export default function Home() {
             height={1117}
             alt='/image/IMG_1004.jpg'
           />
-          <h1 className='title'>Joey Lam</h1>
+          <h1 className='title'>
+          <Typewriter
+            onInit={(typewriter) => {
+              typewriter.typeString('Joey Lam')
+                .callFunction(() => {
+                  console.log('String typed out!');
+                })
+                .start();
+            }}
+          />
+          </h1> 
           <h3 className='titleCap'>Amature Photographer</h3>
         </div>
 
@@ -49,3 +57,4 @@ export default function Home() {
     </main>
   )
 }
+

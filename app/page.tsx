@@ -112,14 +112,7 @@ export default function Home() {
               />
           </div>
           <div className='aboutmeText'>
-            <p>Hi my name is Joey Lam and Im a freshman at Boston University majoring 
-              in computer science and economics. I was always really
-              interested in photography and computer science but 
-              never had the time to get into photography until 
-              recently. I currently use a T7 Rebel from Cannon 
-              with a 18-58mm len. I just recently got into 
-              photography as a way to document my journey from 
-              New York to Boston.
+            <p>Hi, my name is Joey Lam, and I'm a freshman at Boston University majoring in computer science and economics. I was always really interested in photography and computer science but never had the time to get into photography until recently. I currently use a T7 Rebel from Canon with an 18-58mm lens. I just recently got into photography as a way to document my journey from New York to Boston.
             </p>
           </div>
         </div>

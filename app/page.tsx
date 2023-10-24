@@ -7,13 +7,17 @@ import img02 from '../public/IMG_1484.jpg';
 import img03 from '../public/IMG_0244.jpg';
 import aboutme from "../public/IMG_004.jpg";
 import Link from 'next/link'
+import { useState, useEffect } from 'react'
 
 
 export default function Home() {
+  useEffect(() => {
+    document.getElementById('main')!.style.display = 'block'},
+    [])
   return (
     <main id='main'>
       
-      <style>
+      <style> 
         @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
       </style>
       <div className='slide1'>
@@ -138,6 +142,3 @@ export default function Home() {
     </main>
   )
 }
-window.onload = function(){
-  document.getElementById('main')!.style.display = 'block'};
-

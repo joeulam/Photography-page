@@ -6,11 +6,13 @@ import img01 from '../public/IMG_1505.jpg';
 import img02 from '../public/IMG_1484.jpg';
 import img03 from '../public/IMG_0244.jpg';
 import aboutme from "../public/IMG_004.jpg";
+import Link from 'next/link'
 
 
 export default function Home() {
   return (
-    <main>
+    <main id='main'>
+      
       <style>
         @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
       </style>
@@ -18,15 +20,16 @@ export default function Home() {
         <ul className='header'>
           <li className='li2'><h1><a>J-L</a></h1></li>
           <div className='lir'>
-            <li className='li1'><h3><a>About me</a></h3></li>
-            <li className='li1'><h3><a>Portfolio</a></h3></li>
-            <li className='li1'><h3><a>Home</a></h3></li>
+            <li className='li1'><h3><a href="#about_mes">About me</a></h3></li>
+            <li className='li1'><h3><Link href="/port">Portfolio</Link></h3></li>
+            <li className='li1'><h3><a href="#small_displays">Showcase</a></h3></li>
+            <li className='li1'><h3><a href='#landingPhos'>Home</a></h3></li>
           </div>
           
         </ul>
 
 
-        <div className='landingPho'>
+        <div id="landingPhos" className='landingPho'>
           <Image className='homepageIMG'
             src={backimg}
             width={1728}
@@ -36,6 +39,7 @@ export default function Home() {
           <h1 className='title'>
           <Typewriter
             onInit={(typewriter) => {
+              typewriter.pauseFor(1000)
               typewriter.typeString('Joey Lam')
                 .callFunction(() => {
                   console.log('String typed out!');
@@ -51,7 +55,8 @@ export default function Home() {
 
 
         <div className='transition'></div>
-        <div className='small_display'>
+
+        <div id='small_displays' className='small_display'>
           <h1 className='text-center pt-10 smallDisTit'>My favorite photos</h1>
           
           <div className='I01'>
@@ -91,7 +96,7 @@ export default function Home() {
       </div>
 
 
-      <div className='about_me'>
+      <div id="about_mes" className='about_me'>
         <h2 className='text-center'>About me</h2>
 
         <div className='inline-flex abt_me_blog'>
@@ -122,14 +127,17 @@ export default function Home() {
             </div>
             <div className='socials'>
               <ul>
-                <li>Instagram</li>
-                <li>LinkedIn</li>
-                <li>Github</li>
+                <li><a href='https://www.linkedin.com/in/joey-lam-89057021b/'>LinkedIn</a></li>
+                <li><a href='https://github.com/joeulam'>Github</a></li>
               </ul>
-            </div>
+          </div>
+            
         </div>
       </div>
+     
     </main>
   )
 }
+window.onload = function(){
+  document.getElementById('main').style.display = 'block'};
 

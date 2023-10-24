@@ -139,5 +139,5 @@ export default function Home() {
   )
 }
 window.onload = function(){
-  document.getElementById('main').style.display = 'block'};
+  document.getElementById('main')!.style.display = 'block'};
 

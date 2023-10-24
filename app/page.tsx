@@ -25,7 +25,6 @@ export default function Home() {
           <li className='li2'><h1><a>J-L</a></h1></li>
           <div className='lir'>
             <li className='li1'><h3><a href="#about_mes">About me</a></h3></li>
-            <li className='li1'><h3><Link href="/port">Portfolio</Link></h3></li>
             <li className='li1'><h3><a href="#small_displays">Showcase</a></h3></li>
             <li className='li1'><h3><a href='#landingPhos'>Home</a></h3></li>
           </div>

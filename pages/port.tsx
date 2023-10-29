@@ -27,7 +27,7 @@ export default function Portfol() {
           
         </ul>
 
-
+        
         
 
         <div className='footer'>

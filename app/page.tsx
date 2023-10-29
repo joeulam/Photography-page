@@ -8,15 +8,45 @@ import img03 from '../public/IMG_0244.jpg';
 import aboutme from "../public/IMG_004.jpg";
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
-
+import { AnimatePresence } from 'framer-motion'
+import { motion } from "framer-motion"
 
 export default function Home() {
+  const [selectedId, setSelectedId] = useState(null)
+  const items = [{
+    'id': null,
+    "subtitle": "Pee",
+    "title": "Nighty"
+  },]
+  const item = {
+    'id':"1",
+    "subtitle": 'pp',
+    "title": 'Nighty'
+  }
   useEffect(() => {
     document.getElementById('main')!.style.display = 'block'},
     [])
   return (
+    
     <main id='main'>
+ 
+      {items.map(item => (
+        <motion.div layoutId={item.id} onClick={() => setSelectedId(item.id)}>
+          <motion.h5>{item.subtitle}</motion.h5>
+          <motion.h2>{item.title}</motion.h2>
+        </motion.div>
+      ))}
       
+      <AnimatePresence>
+        {selectedId && (
+          <motion.div layoutId={selectedId}>
+            <motion.h5>{item.subtitle}</motion.h5>
+            <motion.h2>{item.title}</motion.h2>
+            <motion.button onClick={() => setSelectedId(null)} />
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       <style> 
         @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
       </style>
@@ -59,7 +89,7 @@ export default function Home() {
 
 
         <div className='transition'></div>
-
+            
         <div id='small_displays' className='small_display'>
           <h1 className='text-center pt-10 smallDisTit'>My favorite photos</h1>
           

@@ -55,15 +55,14 @@ export function Cards(){
           
     )
 }
-
 function dim(bool)
 {
     useEffect(() => {
         if(bool){
-            document.getElementById('dimmer').style.display=(bool?'block':'none')
+            document.getElementById('dimmer')!.style.display=(bool?'block':'none')
         }
         else{
-            document.getElementById('dimmer').style.display='none'
+            document.getElementById('dimmer')!.style.display='none'
         }
         })
     return(

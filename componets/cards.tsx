@@ -66,6 +66,9 @@ function dim(bool)
             document.getElementById('dimmer').style.display='none'
         }
         })
+    return(
+        <div></div>
+    )
     
     
 }  

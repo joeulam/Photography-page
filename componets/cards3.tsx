@@ -54,7 +54,6 @@ export function Cards3(){
           
     )
 }
-
 function dim(bool)
 {
     useEffect(() => {
@@ -65,6 +64,9 @@ function dim(bool)
             document.getElementById('dimmer').style.display='none'
         }
         })
+    return(
+        <div></div>
+    )
     
     
 }  

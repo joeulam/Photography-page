@@ -31,7 +31,6 @@ export default function Home() {
           <li className='li2'><h1><a>J-L</a></h1></li>
           <div className='lir'>
             <li className='li1'><h3><a href="#about_mes">About me</a></h3></li>
-            <li className='li1'><h3><Link href="/port">Portfolio</Link></h3></li>
             <li className='li1'><h3><a href="#small_displays">Showcase</a></h3></li>
             <li className='li1'><h3><a href='#landingPhos'>Home</a></h3></li>
           </div>
@@ -96,7 +95,8 @@ export default function Home() {
               />
           </div>
           <div className='aboutmeText'>
-          <p>Hi, my name is Joey Lam, and I'm a freshman at Boston University majoring in computer science and economics. I was always really interested in photography and computer science but never had the time to get into photography until recently. I currently use a T7 Rebel from Canon with an 18-58mm lens. I just recently got into photography as a way to document my journey from New York to Boston.
+
+            <p>Hi, my name is Joey Lam, and I'm a freshman at Boston University majoring in computer science and economics. I was always really interested in photography and computer science but never had the time to get into photography until recently. I currently use a T7 Rebel from Canon with an 18-58mm lens. I just recently got into photography as a way to document my journey from New York to Boston.
             </p>
           </div>
         </div>

@@ -8,18 +8,24 @@ import img03 from '../public/IMG_0244.jpg';
 import aboutme from "../public/IMG_004.jpg";
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
-
+import { motion } from "framer-motion"
+import { Cards } from '@/componets/cards';
+import { Cards2 } from '@/componets/cards2';
+import { Cards3 } from '@/componets/cards3';
 
 export default function Home() {
+  const [isOpen,setIsOpen] = useState(false)
   useEffect(() => {
     document.getElementById('main')!.style.display = 'block'},
     [])
   return (
+    
     <main id='main'>
-      
+
       <style> 
         @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
       </style>
+      <div id='dimmer'/>
       <div className='slide1'>
         <ul className='header'>
           <li className='li2'><h1><a>J-L</a></h1></li>
@@ -58,42 +64,19 @@ export default function Home() {
 
 
         <div className='transition'></div>
-
+            
         <div id='small_displays' className='small_display'>
-          <h1 className='text-center pt-10 smallDisTit'>My favorite photos</h1>
           
-          <div className='I01'>
-            <h2>01</h2>
-            <Image className='smallImg'
-            src={img01}
-            width={400}
-            height={600}
-            alt='/image/IMG_1505.jpg'
-            />
-            <h3>"Dreamy Night"</h3>
-          </div>
+          <h1 className='text-center pt-10 smallDisTit'>My favorite photos</h1>
+         <div className='card'><Cards /></div>
+         <div className='card'><Cards2 /></div>
+         <div className='card'><Cards3 /></div>
 
-          <div className='I02'>
-            <h2>02</h2>
-            <Image className='smallImg'
-            src={img02}
-            width={400}
-            height={600}
-            alt='/image/IMG_1505.jpg'
-            />
-            <h3>"Eerie Silence"</h3>
-          </div>
 
-          <div className='I03'>
-            <h2>03</h2>
-            <Image className='smallImg2'
-            src={img03}
-            width={800}
-            height={400}
-            alt='/image/IMG_0244.jpg'
-            />
-            <h3>"Night runner"</h3>
-          </div>
+          
+          
+
+          
         </div>
         
       </div>
@@ -112,6 +95,7 @@ export default function Home() {
               />
           </div>
           <div className='aboutmeText'>
+
             <p>Hi, my name is Joey Lam, and I'm a freshman at Boston University majoring in computer science and economics. I was always really interested in photography and computer science but never had the time to get into photography until recently. I currently use a T7 Rebel from Canon with an 18-58mm lens. I just recently got into photography as a way to document my journey from New York to Boston.
             </p>
           </div>

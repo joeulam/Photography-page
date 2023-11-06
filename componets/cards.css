@@ -1,0 +1,45 @@
+
+.smallImg{
+    border-radius: 25px;
+    width: 20vw;
+    height: 60vh;
+  }
+  
+  .I01{
+    margin-left: 15vw;
+    padding-top: 10vh;
+    display: flexbox;
+  }
+  .I01 h3{
+    margin-left: 7vw;
+    margin-top: 3vh;
+  }
+  .I02{
+    margin-left: 60vw;
+    margin-top: -30vh;
+    display: flexbox;
+  }
+  .I02 h3{
+    margin-left: 7vw;
+    margin-top: 3vh;
+  }
+  
+  .I03{
+    margin-left: 15vw;
+    margin-top: -15vh;
+    display: flexbox;
+  }
+  .I03 h2{
+    position:static;
+  }
+  .I03 h3{
+    width: 400;
+    margin-left: 17vw;
+    margin-top: 3vh;
+  }
+  .smallImg2{
+    border-radius: 25px;
+    width: 40vw;
+    height: 50vh;
+  }
+  

@@ -8,48 +8,24 @@ import img03 from '../public/IMG_0244.jpg';
 import aboutme from "../public/IMG_004.jpg";
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
-import { AnimatePresence } from 'framer-motion'
 import { motion } from "framer-motion"
+import { Cards } from '@/componets/cards';
+import { Cards2 } from '@/componets/cards2';
+import { Cards3 } from '@/componets/cards3';
 
 export default function Home() {
-  const [selectedId, setSelectedId] = useState(null)
-  const items = [{
-    'id': null,
-    "subtitle": "Pee",
-    "title": "Nighty"
-  },]
-  const item = {
-    'id':"1",
-    "subtitle": 'pp',
-    "title": 'Nighty'
-  }
+  const [isOpen,setIsOpen] = useState(false)
   useEffect(() => {
     document.getElementById('main')!.style.display = 'block'},
     [])
   return (
     
     <main id='main'>
- 
-      {items.map(item => (
-        <motion.div layoutId={item.id} onClick={() => setSelectedId(item.id)}>
-          <motion.h5>{item.subtitle}</motion.h5>
-          <motion.h2>{item.title}</motion.h2>
-        </motion.div>
-      ))}
-      
-      <AnimatePresence>
-        {selectedId && (
-          <motion.div layoutId={selectedId}>
-            <motion.h5>{item.subtitle}</motion.h5>
-            <motion.h2>{item.title}</motion.h2>
-            <motion.button onClick={() => setSelectedId(null)} />
-          </motion.div>
-        )}
-      </AnimatePresence>
 
       <style> 
         @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
       </style>
+      <div id='dimmer'/>
       <div className='slide1'>
         <ul className='header'>
           <li className='li2'><h1><a>J-L</a></h1></li>
@@ -91,40 +67,19 @@ export default function Home() {
         <div className='transition'></div>
             
         <div id='small_displays' className='small_display'>
-          <h1 className='text-center pt-10 smallDisTit'>My favorite photos</h1>
           
-          <div className='I01'>
-            <h2>01</h2>
-            <Image className='smallImg'
-            src={img01}
-            width={400}
-            height={600}
-            alt='/image/IMG_1505.jpg'
-            />
-            <h3>"Dreamy Night"</h3>
-          </div>
+          <h1 className='text-center pt-10 smallDisTit'>My favorite photos</h1>
+         <div>
+          <Cards />
+         </div>
+         <Cards2 />
+         <Cards3 />
 
-          <div className='I02'>
-            <h2>02</h2>
-            <Image className='smallImg'
-            src={img02}
-            width={400}
-            height={600}
-            alt='/image/IMG_1505.jpg'
-            />
-            <h3>"Eerie Silence"</h3>
-          </div>
 
-          <div className='I03'>
-            <h2>03</h2>
-            <Image className='smallImg2'
-            src={img03}
-            width={800}
-            height={400}
-            alt='/image/IMG_0244.jpg'
-            />
-            <h3>"Night runner"</h3>
-          </div>
+          
+          
+
+          
         </div>
         
       </div>

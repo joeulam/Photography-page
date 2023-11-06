@@ -328,3 +328,18 @@ main{
   font-size: 24px;
   margin-top: 5vh;
 }
+
+.smallImg:hover{
+  transform: scale(1.1); 
+}
+.smallImg{
+  transition: all .4s ease-in-out; 
+}
+
+
+.smallImg2:hover{
+  transform: scale(1.1); 
+}
+.smallImg2{
+  transition: all .4s ease-in-out; 
+}

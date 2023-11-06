@@ -69,11 +69,9 @@ export default function Home() {
         <div id='small_displays' className='small_display'>
           
           <h1 className='text-center pt-10 smallDisTit'>My favorite photos</h1>
-         <div>
-          <Cards />
-         </div>
-         <Cards2 />
-         <Cards3 />
+         <div className='card'><Cards /></div>
+         <div className='card'><Cards2 /></div>
+         <div className='card'><Cards3 /></div>
 
 
           

@@ -26,7 +26,7 @@ main{
   background: linear-gradient(180deg, rgba(33,33,33,1) 0%, rgb(38, 38, 38) 100%);
 }
 
-.loadingsScreen{
+.loadingsScren{
   position:absolute;
   left:0;
   top:0;
